@@ -1,11 +1,12 @@
 <?php
-
+//Создание массива
 $mass = [];
 
 for ($i = 0; $i <= 999; $i++) {
     $mass[$i] = $mass[$i - 1] + 3;
 }
 
+//Поиск порядкового номера элемента
 if (isset($_POST['rows'])) {
     $result = $_POST['rows'];
     $s = 0;
@@ -26,6 +27,7 @@ if (isset($_POST['rows'])) {
 }
 ?>
 
+<!--Прорисовка формы-->
 <form method="POST" action="index.php">
     <select name="rows" size="10">
         <?php
